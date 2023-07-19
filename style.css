@@ -192,6 +192,106 @@ body{
   .cv-download:hover{
     background-color: #000;
   }
+
+
+
+  #banners {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+  .banners-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banners-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0077ff94;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  /* Rest of the slider styles */
+  .slider-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial {
+     flex-shrink: 0;
+    width: 700px; /* Updated width */
+    height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+  .testimonial h3{
+    font-size: 22px;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
+    line-height: 34px;
+    color:#ffffff;
+    font-style: normal;
+  }
+
+  .testimonial p{
+    font-size: 20px;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 300;
+    line-height: 30px;
+    color:#ffffff;
+    font-style: normal;
+  }
+  .testimonial img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+
+  
+  .testimonial-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .testimonial-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: none;
+    border: 1px solid white;
+    margin: 0 0px 50px 5px;
+    cursor: pointer;
+  }
+  
+  .testimonial-indicator.active {
+    background-color: #ffffff;
+  }
   
   @media (max-width: 768px) {
     #container {
@@ -235,6 +335,24 @@ body{
     flex-direction: column;
     margin: 35px 80px 30px 80px;
   
+  }
+
+  .slider {
+    width: 420px;
+    height: 450px;
+    /* top: 40%; */
+  }
+
+  
+  .testimonial {
+    width: 420px;
+    height: 450px;
+    font-size: 14px;
+  }
+  
+  .testimonial-indicators {
+      top: 95%;
+    /* margin: 0px 0px 0px 0px ; */
   }
   }
   
